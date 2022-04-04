@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+html {
+  /*!# this makes sure the the ScrollSpy lands in frame for div content */
+  scroll-padding-top: 90px;
+}
+
+html body {
+  position: relative;
+  overflow-y: auto;
+  background-color: #0a192e !important;
+  font-family: Poppins !important;
+}
+
+/* navbar */
+#navbar_top {
+  background-color: #233554 !important;
+}
+
+.navbar {
+  width: 100%;
+}
+
+.navbar .navbar-nav .active {
+  color: #64ffda !important;
+}
+
+.navbar .nav-link {
+  font-size: xx-large;
+  margin-left: 20px;
+}
+
+.navbar .navbar-brand {
+  color: #64ffda !important;
+}
+
+/* type animation */
+#typed-container {
+  display: inline-block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+@-webkit-keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@-webkit-keyframes blink {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: #31deac;
+  }
+}
+
+@keyframes blink {
+  from {
+    border-color: transparent;
+  }
+  to {
+    border-color: #31deac;
+  }
+}
+
+#typed-container .typed-out {
+  overflow: hidden;
+  border-right: 0.15em solid #31deac;
+  white-space: nowrap;
+  font-size: 1.6rem;
+  width: 0;
+  -webkit-animation: typing 1s steps(20, end) forwards, blink 0.9s infinite;
+          animation: typing 1s steps(20, end) forwards, blink 0.9s infinite;
+}
+
+/* /navbar */
+/* header */
+#headerContainer {
+  margin-top: 120px;
+  margin-bottom: 7rem;
+}
+
+#headerContainer .headerText {
+  font-size: 20px;
+  height: 34px;
+  color: #ccd6f6;
+  margin-bottom: 0px;
+}
+
+#headerContainer .headerSubtext {
+  font-size: 16px;
+  color: #6f7d96;
+}
+
+#headerContainer h1 {
+  color: #6f7d96;
+  font-size: 34px;
+  font-weight: normal;
+}
+
+/* /header */
+/* cards */
+#serviceCards-container {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  margin-bottom: 50px;
+  color: #6f7d96;
+}
+
+#serviceCards-container #SecondRowOfCards {
+  margin-top: 30px !important;
+}
+
+#serviceCards-container h3 {
+  color: #ccd6f6;
+}
+
+#serviceCards-container h4 {
+  color: #ccd6f6;
+}
+
+#cardCollapseBtn {
+  background-color: #233554;
+  border: #0a192e;
+  color: #64ffda;
+}
+
+#cardCollapseBtn:active {
+  color: #31deac;
+}
+
+/* /cards */
+.timeline .events {
+  border-top: 3px solid #e9ecef;
+  margin-bottom: 30px;
+}
+
+.timeline .events .event-list {
+  display: block;
+  position: relative;
+  text-align: center;
+  padding-top: 70px;
+  margin-right: 0;
+}
+
+.timeline .events .event-list:before {
+  content: "";
+  position: absolute;
+  height: 36px;
+  border-right: 2px dashed #dee2e6;
+  top: 0;
+}
+
+.timeline .events .event-list .event-date {
+  position: absolute;
+  top: 38px;
+  left: 0;
+  right: 0;
+  width: 75px;
+  margin: 0 auto;
+  border-radius: 4px;
+  padding: 2px 4px;
+}
+
+.dot {
+  height: 25px;
+  width: 25px;
+  background-color: #31deac;
+  border-radius: 50%;
+  display: inline-block;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+}
+
+.dot:hover {
+  height: 15px;
+  width: 15px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.dot-color-purple {
+  background-color: #884EA0 !important;
+}
+
+.dot-color-blue {
+  background-color: #2E86C1 !important;
+}
+
+.dot-color-yellow {
+  background-color: #F1C40F !important;
+}
+
+.dot-color-green {
+  background-color: #27AE60 !important;
+}
+
+@media (min-width: 1140px) {
+  .timeline .events .event-list {
+    display: inline-block;
+    width: 24%;
+    padding-top: 45px;
+  }
+  .timeline .events .event-list .event-date {
+    top: -12px;
+  }
+}
+
+.card {
+  border: none;
+  margin-bottom: 24px;
+}
+
+#timeLine {
+  background-color: #0a192e;
+  color: #6f7d96 !important;
+  border: none;
+}
+
+#timeLine h4 {
+  color: #ccd6f6;
+}
+
+#timeLine p {
+  color: #6f7d96 !important;
+}
+
+.contact-me-header {
+  text-align: center;
+  color: #ccd6f6 !important;
+}
+
+#contactmeFormContainer label {
+  color: #6f7d96 !important;
+}
+
+#contactmeForm {
+  max-width: 100%;
+}
+
+.submit-social-container {
+  margin-bottom: 20px;
+}
+
+.submit-social-container li {
+  list-style: none;
+  display: inline-block;
+  line-height: 20px;
+}
+
+.submit-social-container button {
+  margin-bottom: 10px;
+  background-color: #233554 !important;
+  border: #0a192e !important;
+  color: #64ffda !important;
+}
+
+.submit-social-container a {
+  display: block;
+  padding-left: 15px !important;
+  line-height: 20px;
+}
+
+.submit-social-container #facebookicon {
+  font-size: 30px;
+  color: #3b5998 !important;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  line-height: 20px;
+}
+
+.submit-social-container #facebookicon:hover {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.submit-social-container #githubIcon {
+  font-size: 30px;
+  color: #313030;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  line-height: 20px;
+}
+
+.submit-social-container #githubIcon:hover {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.submit-social-container #stackoverflowIcon {
+  font-size: 30px;
+  color: #EC7D27;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  line-height: 20px;
+}
+
+.submit-social-container #stackoverflowIcon:hover {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.submit-social-container #instagramIcon {
+  font-size: 30px;
+  color: #C83085;
+  -webkit-transition: all 0.2s ease-in;
+  transition: all 0.2s ease-in;
+  line-height: 20px;
+}
+
+.submit-social-container #instagramIcon:hover {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+/* footer */
+#Footer {
+  background-color: #233554 !important;
+}
+
+/* /footer */
+/*# sourceMappingURL=style.css.map */

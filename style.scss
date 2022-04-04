@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+// my list of colors used in most of my projects
+$default: #ffff;
+$Mulberry: #770737;
+$Cerise: #DE3163;
+$white: #ffff;
+$Aquamarine: #64ffda;
+$poppins: poppins;
+$dummyimg: url('dummy_350x350_ffffff_cccccc.png');
+$lime-green: #31deac;
+$flat-purple: #884EA0;
+$flat-blue: #2E86C1;
+$flat-yellow: #F1C40F;
+$flat-green: #27AE60;
+$facebook-blue: #3b5998;
+$twitter-cyan: #00acee;
+$pinterest-red: #F0002A;
+$stack-overflow-orange: #EC7D27;
+$instagram-pink: #C83085;
+$github-grey: #313030;
+$Cloud-Burst-blue: #233554;
+$royal-blue: #0a192e;
+$Lynch: #6f7d96;
+$like-a-kite: #ccd6f6;
+
+html {
+    /*!# this makes sure the the ScrollSpy lands in frame for div content */
+    scroll-padding-top: 90px;
+
+    body {
+        position: relative;
+        overflow-y: auto;
+        background-color: $royal-blue !important;
+        font-family: Poppins !important;
+    }
+}
+
+/* navbar */
+#navbar_top {
+    background-color: $Cloud-Burst-blue !important;
+}
+
+.navbar {
+    width: 100%;
+
+    .navbar-nav .active {
+        color: $Aquamarine !important;
+    }
+
+    .nav-link {
+        font-size: xx-large;
+        margin-left: 20px;
+
+    }
+
+    .navbar-brand {
+        color: $Aquamarine !important;
+    }
+
+}
+
+/* type animation */
+#typed-container {
+    display: inline-block;
+    // set to fit-content to display all text even if text is changed 
+    width: fit-content;
+
+    @keyframes typing {
+        from {
+            width: 0
+        }
+
+        to {
+            width: 100%
+        }
+    }
+
+    @keyframes blink {
+        from {
+            border-color: transparent
+        }
+
+        to {
+            border-color: $lime-green;
+        }
+    }
+
+    .typed-out {
+        overflow: hidden;
+        border-right: .15em solid $lime-green;
+        white-space: nowrap;
+        font-size: 1.6rem;
+        width: 0;
+        animation:
+            typing 1s steps(20, end) forwards,
+            blink .9s infinite;
+    }
+}
+
+
+/* /navbar */
+/* header */
+#headerContainer {
+    margin-top: 120px;
+    margin-bottom: 7rem;
+
+    .headerText {
+
+        font-size: 20px;
+        height: 34px;
+        color: $like-a-kite;
+        margin-bottom: 0px;
+    }
+
+    .headerSubtext {
+        font-size: 16px;
+        color: $Lynch;
+    }
+
+    h1 {
+        color: $Lynch;
+        font-size: 34px;
+        font-weight: normal;
+    }
+}
+
+/* /header */
+/* cards */
+#serviceCards-container {
+
+    height: max-content;
+    margin-bottom: 50px;
+    color: $Lynch;
+
+    #SecondRowOfCards {
+        margin-top: 30px !important;
+    }
+
+    h3 {
+        color: $like-a-kite;
+    }
+
+    h4 {
+        color: $like-a-kite;
+    }
+}
+
+#cardCollapseBtn {
+    background-color: $Cloud-Burst-blue;
+    border: $royal-blue;
+    color: $Aquamarine;
+
+
+    &:active {
+        color: $lime-green;
+        // outline: solid 2px $lime-green;
+    }
+}
+
+/* /cards */
+// timeline
+.timeline .events {
+    border-top: 3px solid #e9ecef;
+    margin-bottom: 30px;
+}
+
+.timeline .events .event-list {
+    display: block;
+    position: relative;
+    text-align: center;
+    padding-top: 70px;
+    margin-right: 0;
+}
+
+.timeline .events .event-list:before {
+    content: "";
+    position: absolute;
+    height: 36px;
+    border-right: 2px dashed #dee2e6;
+    top: 0;
+}
+
+.timeline .events .event-list .event-date {
+    position: absolute;
+    top: 38px;
+    left: 0;
+    right: 0;
+    width: 75px;
+    margin: 0 auto;
+    border-radius: 4px;
+    padding: 2px 4px;
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: $lime-green;
+    border-radius: 50%;
+    display: inline-block;
+    transition: all 0.3s ease-in;
+
+    &:hover {
+        height: 15px;
+        width: 15px;
+        transition: all 0.3s ease-in-out;
+    }
+
+}
+
+// i made classes for each dot color 
+.dot-color-purple {
+    background-color: $flat-purple !important;
+}
+
+.dot-color-blue {
+    background-color: $flat-blue !important;
+}
+
+.dot-color-yellow {
+    background-color: $flat-yellow !important;
+}
+
+.dot-color-green {
+    background-color: $flat-green !important;
+}
+
+@media (min-width: 1140px) {
+    .timeline .events .event-list {
+        display: inline-block;
+        width: 24%;
+        padding-top: 45px;
+    }
+
+    .timeline .events .event-list .event-date {
+        top: -12px;
+    }
+}
+
+.card {
+    border: none;
+    margin-bottom: 24px;
+}
+
+#timeLine {
+    background-color: $royal-blue;
+    color: $Lynch !important;
+    border: none;
+
+    h4 {
+        color: $like-a-kite;
+    }
+
+    p {
+        color: $Lynch !important;
+    }
+}
+
+// end of timeline
+// contact me 
+.contact-me-header {
+    text-align: center;
+    color: $like-a-kite !important;
+}
+
+#contactmeFormContainer {
+
+    label {
+        color: $Lynch !important;
+    }
+}
+
+#contactmeForm {
+    max-width: 100%;
+}
+
+.submit-social-container {
+    margin-bottom: 20px;
+
+    li {
+        list-style: none;
+        display: inline-block;
+        line-height: 20px;
+    }
+
+    button {
+        margin-bottom: 10px;
+        background-color: $Cloud-Burst-blue !important;
+        border: $royal-blue !important;
+        color: $Aquamarine !important;
+
+    }
+
+    a {
+        // margin-left: 10px;
+        display: block;
+        padding-left: 15px !important;
+        line-height: 20px;
+    }
+
+    #facebookicon {
+        font-size: 30px;
+        color: $facebook-blue !important;
+        transition: all 0.2s ease-in;
+        line-height: 20px;
+
+        &:hover {
+            transition: all 0.2s ease-in-out;
+            transform: scale(1.2);
+        }
+    }
+
+    #githubIcon {
+        font-size: 30px;
+        color: $github-grey;
+        transition: all 0.2s ease-in;
+        line-height: 20px;
+
+        &:hover {
+            transition: all 0.2s ease-in-out;
+            -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+        }
+    }
+
+    #stackoverflowIcon {
+        font-size: 30px;
+        color: $stack-overflow-orange;
+        transition: all 0.2s ease-in;
+        line-height: 20px;
+
+        &:hover {
+            transition: all 0.2s ease-in-out;
+            -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+        }
+    }
+
+    #instagramIcon {
+        font-size: 30px;
+        color: $instagram-pink;
+        transition: all 0.2s ease-in;
+        line-height: 20px;
+
+        &:hover {
+            transition: all 0.2s ease-in-out;
+            -webkit-transform: scale(1.2);
+            transform: scale(1.2);
+        }
+    }
+}
+
+// /contact me
+/* footer */
+#Footer {
+    background-color: $Cloud-Burst-blue !important;
+}
+
+/* /footer */
