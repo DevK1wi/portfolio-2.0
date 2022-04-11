@@ -1,7 +1,5 @@
 # portfolio-2.0.1
-this is the final product for v2.0
-v1.0 - v1.9 never was pushed 
-
+My portfolio website (Live@ https://tyler-jones-webdev.epizy.com/index.html )
 -------------------------------------------
 11-04-2022 ~ v2.0.1
 changes:
